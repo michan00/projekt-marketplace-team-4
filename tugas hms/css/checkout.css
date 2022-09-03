@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+}
+.img-keranjang {
+    width: 70px;
+}
+.box1 {
+    width: 100%;
+}
+.box2 {
+    width: 100%;
+}
+
+.tableflex {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+/* responsive css */
+@media (max-width:670px) {
+    .box1 {
+        width: 100%;
+        font-size: 14px;
+    }
+}
