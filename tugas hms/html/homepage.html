@@ -18,6 +18,7 @@
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
+
         <a class="navbar-brand" href="/tugas hms/html/homepage.html">
             <a class="navbar-brand" href="/tugas hms/html/homepage.html">
                 <img src="../assets/logo.png" alt="" width="60" height="60" class="d-inline-block">
@@ -30,18 +31,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <form class="d-flex ms-auto my-4 my-lg-0" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control me-2" type="search" id="search-item" placeholder="Search" onkeyup="search()">
                 <button class="btn btn-light" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#Home"><i class="fa-solid fa-house"></i></a>
+                    <a class="nav-link active" aria-current="page" href="homepage.html"><i class="fa-solid fa-house"></i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="keranjang.html"><i class="fa-solid fa-cart-shopping"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#Notifikasi"><i class="fa-solid fa-bell"></i></a>
+                    <a class="nav-link" href="notifikasi.html"><i class="fa-solid fa-bell"></i></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#Kategori" role="button" data-bs-toggle="dropdown"
@@ -147,61 +148,63 @@
     <div class="judul-produk" style="background-color: #fff; padding: 5px 10px;">
         <h5 class="text-center" style="margin-top: 5px;">Produk</h5>
     </div>
-    <div class="row">
-        <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-2">
-            <div class="card">
-                <img src="../assets/produk/kaos1.jpg" class="card-img-top" alt="..." width="200" height="200">
-                <div class="card-body">
-                    <h6 class="card-title">Kaos Pria</h6>
-                    <p class="card-text mt-3">Rp 150.000</p>
+    <div class="product">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-2">
+                <div class="card">
+                    <img src="../assets/produk/kaos1.jpg" class="card-img-top" alt="..." width="200" height="200">
+                    <div class="card-body">
+                        <h6 class="card-title">Kaos Pria</h6>
+                        <p class="card-text mt-3">Rp 150.000</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-2">
-            <div class="card">
-                <img src="../assets/produk/jacket1.jpg" class="card-img-top" alt="..." width="200" height="200">
-                <div class="card-body">
-                    <h6 class="card-title">Jacket Pria</h6>
-                    <p class="card-text mt-3">Rp 320.000</p>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-2">
+                <div class="card">
+                    <img src="../assets/produk/jacket1.jpg" class="card-img-top" alt="..." width="200" height="200">
+                    <div class="card-body">
+                        <h6 class="card-title">Jacket Pria</h6>
+                        <p class="card-text mt-3">Rp 320.000</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-2">
-            <div class="card">
-                <img src="../assets/produk/sepatu1.jpg" class="card-img-top" alt="..." width="200" height="200">
-                <div class="card-body">
-                    <h6 class="card-title">Sepatu Pria/Wanita</h6>
-                    <p class="card-text mt-3">Rp 1.800.000</p>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-2">
+                <div class="card">
+                    <img src="../assets/produk/sepatu1.jpg" class="card-img-top" alt="..." width="200" height="200">
+                    <div class="card-body">
+                        <h6 class="card-title">Sepatu Pria/Wanita</h6>
+                        <p class="card-text mt-3">Rp 1.800.000</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-2">
-            <div class="card">
-                <img src="../assets/produk/kacamata1.jpg" class="card-img-top" alt="..." width="200" height="200">
-                <div class="card-body">
-                    <h6 class="card-title">Kacamata</h6>
-                    <p class="card-text mt-3">Rp 100.000</p>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-2">
+                <div class="card">
+                    <img src="../assets/produk/kacamata1.jpg" class="card-img-top" alt="..." width="200" height="200">
+                    <div class="card-body">
+                        <h6 class="card-title">Kacamata</h6>
+                        <p class="card-text mt-3">Rp 100.000</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-2">
-            <div class="card">
-                <img src="../assets/produk/hoodie1.jpg" class="card-img-top" alt="..." width="200" height="200">
-                <div class="card-body">
-                    <h6 class="card-title">Hoodie Pria/Wanita</h6>
-                    <p class="card-text mt-3">Rp 280.000</p>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-2">
+                <div class="card">
+                    <img src="../assets/produk/hoodie1.jpg" class="card-img-top" alt="..." width="200" height="200">
+                    <div class="card-body">
+                        <h6 class="card-title">Hoodie Pria/Wanita</h6>
+                        <p class="card-text mt-3">Rp 280.000</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-2">
-            <div class="card">
-                <img src="../assets/produk/sepatu2.jpg" class="card-img-top" alt="..." width="200" height="200">
-                <div class="card-body">
-                    <h6 class="card-title">Sepatu Pria/Wanita</h6>
-                    <p class="card-text mt-3">Rp 699.000</p>
+            <div class="col-lg-2 col-md-2 col-sm-4 col-6 mt-2">
+                <div class="card">
+                    <img src="../assets/produk/sepatu2.jpg" class="card-img-top" alt="..." width="200" height="200">
+                    <div class="card-body">
+                        <h6 class="card-title">Sepatu Pria/Wanita</h6>
+                        <p class="card-text mt-3">Rp 699.000</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div>    
     </div>
 </div>
 
@@ -220,9 +223,13 @@
     </div>
 </footer>
 <!-- End Footer -->
+
+<!-- js -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
 </script>
+<script src="../js/search.js"></script>
+<!-- end js -->
 </body>
 
 </html>
